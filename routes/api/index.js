@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/your-database-name', {
+mongoose.connect('mongodb://localhost:27017/Challenge-18-RESTFUL-API', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -25,8 +25,6 @@ db.once('open', () => {
   app.get('/', (req, res) => {
     res.send('Hello, World!');
   });
-
-  // Additional routes...
 
   // Start the server
   app.listen(PORT, () => {

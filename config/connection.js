@@ -1,7 +1,7 @@
 const { connect, connection } = require('mongoose');
 
 // Define the MongoDB connection URL
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/your-database-name';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/Challenge-18-RESTFUL-API';
 
 // Connect to MongoDB
 connect(MONGODB_URI, {

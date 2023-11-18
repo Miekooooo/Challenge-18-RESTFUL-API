@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Thought = require('../models/Thought'); // Assuming the Thought model is defined in a separate file
-const User = require('../models/User'); // Assuming the User model is defined in a separate file
+const Thought = require('../models/Thought');
+const User = require('../models/User');
 
 // GET all thoughts
 router.get('/thoughts', async (req, res) => {

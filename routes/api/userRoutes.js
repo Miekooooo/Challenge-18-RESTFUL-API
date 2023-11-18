@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User'); // Assuming the User model is defined in a separate file
+const User = require('../models/User');
 
 // GET all users
 router.get('/users', async (req, res) => {
